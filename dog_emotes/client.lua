@@ -233,16 +233,15 @@ local player = PlayerPedId()
 end)
 
 
-
-Citizen.CreateThread(function()
-	while true do
-	 Citizen.Wait(0)
-	  if IsControlJustReleased(1, 32) then
-	  ClearPedTasksImmediately(GetPlayerPed(-1))            
-	 end
-	end
-   end)
-
+-- This messes with the player alot and isnt needed.
+--Citizen.CreateThread(function()
+--	while true do
+--	 Citizen.Wait(0)
+--	  if IsControlJustReleased(1, 32) then
+--	  ClearPedTasksImmediately(GetPlayerPed(-1))            
+--	 end
+--	end
+--   end)
 
 
 
